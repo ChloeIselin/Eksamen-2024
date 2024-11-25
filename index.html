@@ -11,33 +11,32 @@
     </head>
     <body>
         <header>
-            <img id="main-logo" src="https://picsum.photos/150/150" alt="Nettsted logo">
-            <nav>
+            <a href="index.html" class="main-logo"><img id="main-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo"></a>
+            <nav class="flex-space">
                 <form>
-                    <label for="search">Søk</label>
+                    <label for="search"></label>
                     <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <input type="submit" value="søk">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul>
-                    <li><a href="#">Hjem</a></li>
-                    <li><a href="#">Produkter</a></li>
-                    <li><a href="#">Kategorier</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#produkter">Produkter</a></li>
+                    <li><a href="#kategorier">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
-                    <i class="fa-regular fa-user"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                <ul> 
+                    <li><a><i class="fa-regular fa-user"></i></a></li> 
+                    <li><a><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul> 
             </nav>
         </header>
         <main>
             <section id="banner">
-                    <img src="https://picsum.photos/id/289/800/400" alt="banner">
-                    <img src="https://picsum.photos/id/113/800/400" alt="banner">
-                    <img src="https://picsum.photos/id/173/800/400" alt="banner">
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h1> 
                     <a href="#" class="btn">Les mer</a> 
             </section>
-            <section>
+            <section id="produkter">
                 <h2>Våre mest populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
                 <article>
@@ -49,86 +48,166 @@
                 <article>
                     <h3>Best sellers</h3>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/cockerspaniel.jpg" alt="Product"> 
+                    <!--Image by <a href="https://pixabay.com/users/katrina_s-5565009/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Katrina_S</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Pixabay</a>-->
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Cocker Spaniel</h4>
+                    <p class="price">kr 18 000</p>
+                    <ul id="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/goldenretriever.jpg" alt="Product">
+                    <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Golden Retriever</h4>
+                    <p>kr 12 000</p>
+                    <ul id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/australianshepherd.jpg" alt="Product"> <!--det var ingen kode lenke til dette bilde--> 
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Australian Shepherd</h4>
+                    <p>kr 22 000</p>
+                    <ul id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/husky.jpg" alt="Product"> <!--det var ingen kode lenke til dette bilde--> 
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Husky</h4>
+                    <p>kr 17 000</p>
+                    <ul id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/shiba.jpg" alt="Product"> <!--Image by <a href="https://pixabay.com/users/matyasvargaphoto-22257522/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Mátyás Varga</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Pixabay</a>-->
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Shiba</h4>
+                    <p>kr 25 000</p>
+                    <ul id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/200" alt="Product">
-                    <h4>Produkt navn</h4>
-                    <p>kr 1999</p>
+                <article class="product-card">
+                    <img src="img/bordercollie.jpg" alt="Product"> <!--Image by <a href="https://pixabay.com/users/salofoto-11386676/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">salofoto</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">Pixabay</a>-->
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Border Collie</h4>
+                    <p>kr 16 500</p>
+                    <ul id="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </ul>
                 </article>
             </section>
-            <section>
+            <section id="kategorier">
                 <h2>Våre mest populære kategorier</h2>
                 <p>Oppdag det beste av det beste</p>
-                <article>
+                <article id="kategori1">
                     <h3>Kategori 1</h3>
                 </article>
-                <article>
+                <article id="kategori2">
                     <h3>Kategori 2</h3>
                 </article>
-                <article>
+                <article id="kategori3">
                     <h3>Kategori 3</h3>
                 </article>
-                <article>
+                <article id="kategori4">
                     <h3>Kategori 4</h3>
                 </article>
-                <article>
+                <article id="kategori5">
                     <h3>Kategori 5</h3>
                 </article>
             </section>
-            <section>
+            <section id="anmeldelser">
                 <h2>Anmeldelser</h2>
-                <article>
-                    <h3>Person 1</h3>
-                    <p>LOREM IPSUM</p>
+                <article id="anmeldelser1">
+                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                    <h3>Hanna Hagen</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article>
-                    <h3>Person 2</h3>
-                    <p>LOREM IPSUM</p>
+                <article id="anmeldelser2">
+                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                    <h3>Ole Krisiansen</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article>
-                    <h3>Person 3</h3>
-                    <p>LOREM IPSUM</p>
+                <article id="anmeldelser3">
+                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                    <h3>Maud Britsen</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article>
-                    <h3>Person 4</h3>
-                    <p>LOREM IPSUM</p>
+                <article id="anmeldelser4">
+                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                    <h3>Jakob Henriksen</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article>
-                    <h3>Person 5</h3>
-                    <p>LOREM IPSUM</p>
+                <article id="anmeldelser5">
+                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                    <h3>Maria Isaksen</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
             </section>
         </main>
         <footer>
             <section>
-                <img id="footer-logo" src="https://picsum.photos/150/150" alt="Nettsted logo">
+                <img id="footer-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo">
                 <h4>Lorem ipsum</h4>
             </section>
-            <section>
+            <section id="kontakt">
                 <h3>Kontakt</h3>
                     <i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden 
                     <i class="fa-solid fa-phone"></i> Telefon: 69 60 80 00 
@@ -138,18 +217,20 @@
             <section>
                 <h3>Snarveier</h3>
              <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
              </ul>
             </section>
             <section>
                 <h3>Sosiale medier</h3>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-pinterest"></i>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
+                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                </ul>
             </section>
         </footer>
     </body>

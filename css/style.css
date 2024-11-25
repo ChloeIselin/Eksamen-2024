@@ -1,0 +1,268 @@
+
+.main-logo{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+#search{
+
+}
+
+i {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    color: rgb(35, 35, 35);
+    list-style: none;
+  }
+
+#banner{
+    color: rgb(252, 252, 252);
+    display: flex;
+    text-decoration: none;
+    font-size:small;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #6a6a6ad4;
+}
+
+.btn{
+    background-color: #6a6a6ad4;
+    color: rgb(252, 252, 252);
+
+}
+
+
+.product-card{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+
+    img{
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+
+.price{
+    color: grey;
+    font-size: 22px;
+}
+
+#kategorier{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+    justify-content: center;
+}
+
+  #kategorier article {
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+#kategori1{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#kategori2{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#kategori3{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#kategori4{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#kategori5{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.product{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+
+    img{
+        max-width: 200px;
+        min-width: 200px;
+    }
+}
+
+details{
+    display: block;
+}
+
+#anmeldelser{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#anmeldelser1{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#anmeldelser2{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#anmeldelser3{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#anmeldelser4{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#anmeldelser5{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#produkt{
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 8px;
+    padding: 1rem;
+
+    img{
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+
+.button{
+    border: black;
+    outline: 1rem;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+#legg-handlekurv{
+    color: #efefef;
+    background-color: grey;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+     color: black; 
+}
+
+footer i{
+    color: black;
+}
+
+  footer ul{
+    list-style: none;
+  }
+
+
+  /*Mobil*/
+@media only screen and (max-width: 800px){
+
+    #grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    header, main, footer{
+        grid-column: 1 / 2;
+    }
+
+    header{
+        grid-row: 1 / 2;
+    }
+
+    main{
+        grid-row: 2 / 3;
+    }
+
+    footer{
+        grid-row: 3 / 4;
+    }
+}
