@@ -10,25 +10,31 @@
         <title>Eksamen</title>
     </head>
     <body>
+        <div class="grid-container">
         <header>
-            <a href="index.html" class="main-logo"><img id="main-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo"></a>
-            <nav>
-                <form class="flex-search">
-                    <label for="search"></label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+            <form class="search-box" id="search-box-1">
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#produkter">Produkter</a></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="main-logo">LOGO</a>
+            <nav class="main-nav">
+                <ul>
                     <li><a href="index.html#kategorier">Kategorier</a></li>
                     <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
-                <ul>
-                <li><a><i class="fa-regular fa-user"></i></a></li> 
-                <li><a><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
+            </nav>
+            <nav class="main-nav-ikon">
+                <ul> 
+                    <li><a><i class="fa-regular fa-user"></i></a></li> 
+                    <li><a><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul> 
             </nav>
         </header>
         <main>
@@ -51,7 +57,7 @@
                 </article>
                 <article>
                     <h2>Golden Retriever på 3 måneder</h2>
-                    <a href="#">Golden Retriever</a>
+                    <a href="index.html#produkter">Golden Retriever</a>
                     <p class="price">kr 12 000 ink. mva</p>
                     <p>Pels farge: Lys</p>
                 </article>
@@ -67,7 +73,7 @@
                     </select>
                 </label>
                 <article class="button">
-                    <p><butto id="legg-handlekurv">Legg til i handlekurv</button></p>
+                    <p><button id="legg-handlekurv">Legg til i handlekurv</button></p>
                     <button class="btn"><i class="fa-solid fa-heart"></i></button>
                 </article>
                 <details>
@@ -131,7 +137,7 @@
                 <summary>Anmeldelser</summary>
                 <p>
                     <article>
-                        <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                        <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                         <h3>Hanna Hagen</h3>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -219,11 +225,11 @@
             </section>
         </main>
         <footer>
-            <section id="kontakt">
+            <section>
                 <img id="footer-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo">
                 <h4>Lorem ipsum</h4>
             </section>
-            <section>
+            <section id="kontakt">
                 <h3>Kontakt</h3>
                     <i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden 
                     <i class="fa-solid fa-phone"></i> Telefon: 69 60 80 00 
@@ -232,22 +238,27 @@
             </section>
             <section>
                 <h3>Snarveier</h3>
+            <nav class="main-nav">
              <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
              </ul>
+            </nav>
             </section>
             <section>
                 <h3>Sosiale medier</h3>
+            <nav class="main-nav-ikon">
                 <ul>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
                     <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
                 </ul>
+            </nav>
             </section>
         </footer>
+      </div>
     </body>
 </html>

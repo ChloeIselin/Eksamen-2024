@@ -10,148 +10,153 @@
         <title>Eksamen</title>
     </head>
     <body>
+        <div class="grid-container">
         <header>
-            <a href="index.html" class="main-logo"><img id="main-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo"></a>
-            <nav class="flex-space">
-                <form>
-                    <label for="search"></label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+            <form class="search-box" id="search-box-1">
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#produkter">Produkter</a></li>
-                    <li><a href="index.html#kategorier">Kategorier</a></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="main-logo">LOGO</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#categories">Kategorier</a></li>
                     <li><a href="#kontakt">Kontakt oss</a></li>
                 </ul>
+            </nav>
+            <nav class="main-nav-ikon">
                 <ul> 
-                    <li><a><i class="fa-regular fa-user"></i></a></li> 
+                    <li><a><i class="fa-regular fa-user"></i></a></li>
+                </ul>
+                <ul>
                     <li><a><i class="fa-solid fa-heart"></i></a></li>
+                </ul> 
+                <ul>
                     <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul> 
             </nav>
         </header>
         <main>
-            <section id="banner">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h1> 
-                    <a href="#" class="btn">Les mer</a> 
+            <section class="banner">
+                    <h1>Prøvepakker er tilgjengelige å bestille på nettsiden vår i dag.</h1>
+                    <p>Et utvalg av godiser og leker til bestevennen din. Alt laget i Norge og med bærekraftige materialer som ikke er skadelig for bestevennen din.</p>
+                <figure>
+                    <button class="btn-banner farge-graa">Få en prøvepakke i dag</button> 
+                </figure>
             </section>
             <section id="produkter">
+                <article>
                 <h2>Våre mest populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
-                <article>
-                    <h3>New product</h3>
                 </article>
-                <article>
-                    <h3>Special price</h3>
-                </article>
-                <article>
-                    <h3>Best sellers</h3>
+                <button class="btn farge-hvit">Nye<br/>produkter</button>
+                <button class="btn farge-hvit">Spesielle<br/>priser</button>
+                <button class="btn farge-hvit">Mest<br/>populære</button>
+                <article class="product-card">
+                    <img src="img/goldenretriever.jpg" alt="Product">
+                    <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
+                    <i class="fa-regular fa-heart"></i>
+                    <h4>Golden Retriever</h4>
+                    <a href="product.html#produkt">Golden Retriever</a>
+                    <p class="price">kr 12 000</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
                     <img src="img/cockerspaniel.jpg" alt="Product"> 
                     <!--Image by <a href="https://pixabay.com/users/katrina_s-5565009/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Katrina_S</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Pixabay</a>-->
                     <i class="fa-regular fa-heart"></i>
                     <h4>Cocker Spaniel</h4>
+                    <a href="#">Cocker Spaniel</a>
                     <p class="price">kr 18 000</p>
-                    <ul id="star">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    </ul>
-                </article>
-                <article class="product-card">
-                    <img src="img/goldenretriever.jpg" alt="Product">
-                    <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
-                    <i class="fa-regular fa-heart"></i>
-                    <h4>Golden Retriever</h4>
-                    <p>kr 12 000</p>
-                    <ul id="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </ul>
                 </article>
                 <article class="product-card">
                     <img src="img/australianshepherd.jpg" alt="Product"> <!--det var ingen kode lenke til dette bilde--> 
                     <i class="fa-regular fa-heart"></i>
                     <h4>Australian Shepherd</h4>
-                    <p>kr 22 000</p>
-                    <ul id="star">
+                    <a href="#">Australian Shepherd</a>
+                    <p class="price">kr 22 000</p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                    </ul>
                 </article>
                 <article class="product-card">
                     <img src="img/husky.jpg" alt="Product"> <!--det var ingen kode lenke til dette bilde--> 
                     <i class="fa-regular fa-heart"></i>
                     <h4>Husky</h4>
-                    <p>kr 17 000</p>
-                    <ul id="star">
+                    <a href="#">Husky</a>
+                    <p class="price">kr 17 000</p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                    </ul>
                 </article>
                 <article class="product-card">
                     <img src="img/shiba.jpg" alt="Product"> <!--Image by <a href="https://pixabay.com/users/matyasvargaphoto-22257522/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Mátyás Varga</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Pixabay</a>-->
                     <i class="fa-regular fa-heart"></i>
                     <h4>Shiba</h4>
-                    <p>kr 25 000</p>
-                    <ul id="star">
+                    <a href="#">Shiba</a>
+                    <p class="price">kr 25 000</p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                    </ul>
                 </article>
                 <article class="product-card">
                     <img src="img/bordercollie.jpg" alt="Product"> <!--Image by <a href="https://pixabay.com/users/salofoto-11386676/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">salofoto</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">Pixabay</a>-->
                     <i class="fa-regular fa-heart"></i>
                     <h4>Border Collie</h4>
-                    <p>kr 16 500</p>
-                    <ul id="star">
+                    <a href="#">Border Collie</a>
+                    <p class="price">kr 16 500</p>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                    </ul>
                 </article>
             </section>
-            <section id="kategorier">
+            <section class="kategorier" id="categories">
+                <article>
                 <h2>Våre mest populære kategorier</h2>
                 <p>Oppdag det beste av det beste</p>
-                <article id="kategori1">
+                </article>
+                <article class="kategori1">
                     <h3>Kategori 1</h3>
                 </article>
-                <article id="kategori2">
+                <article class="kategori1">
                     <h3>Kategori 2</h3>
                 </article>
-                <article id="kategori3">
+                <article class="kategori3">
                     <h3>Kategori 3</h3>
                 </article>
-                <article id="kategori4">
+                <article class="kategori1">
                     <h3>Kategori 4</h3>
                 </article>
-                <article id="kategori5">
+                <article class="kategori1">
                     <h3>Kategori 5</h3>
                 </article>
             </section>
-            <section id="anmeldelser">
+            <section class="anmeldelsene">
                 <h2>Anmeldelser</h2>
-                <article id="anmeldelser1">
-                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                <article class="anmeldelser">
+                    <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                     <h3>Hanna Hagen</h3>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -160,8 +165,8 @@
                     <i class="fa-solid fa-star"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article id="anmeldelser2">
-                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                <article class="anmeldelser">
+                    <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                     <h3>Ole Krisiansen</h3>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -170,8 +175,8 @@
                     <i class="fa-solid fa-star"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article id="anmeldelser3">
-                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                <article class="anmeldelser">
+                    <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                     <h3>Maud Britsen</h3>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -180,8 +185,8 @@
                     <i class="fa-solid fa-star"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article id="anmeldelser4">
-                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                <article class="anmeldelser">
+                    <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                     <h3>Jakob Henriksen</h3>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -190,8 +195,8 @@
                     <i class="fa-solid fa-star"></i>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
-                <article id="anmeldelser5">
-                    <img id="profil-bilde" src="https://picsum.photos/id/901/150/150" alt="Profil bilde">
+                <article class="anmeldelser">
+                    <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
                     <h3>Maria Isaksen</h3>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -204,10 +209,10 @@
         </main>
         <footer>
             <section>
-                <img id="footer-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo">
+                <a href="index.html" class="footer-logo">LOGO</a>
                 <h4>Lorem ipsum</h4>
             </section>
-            <section id="kontakt">
+            <section id="kontakt" >
                 <h3>Kontakt</h3>
                     <i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden 
                     <i class="fa-solid fa-phone"></i> Telefon: 69 60 80 00 
@@ -216,22 +221,27 @@
             </section>
             <section>
                 <h3>Snarveier</h3>
+            <nav class="main-nav">
              <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#produkter">Produkter</a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#categories">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
              </ul>
+            </nav>
             </section>
             <section>
                 <h3>Sosiale medier</h3>
+            <nav class="main-nav-ikon">
                 <ul>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
                     <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
                 </ul>
+            </nav>
             </section>
         </footer>
+        </div>
     </body>
 </html>

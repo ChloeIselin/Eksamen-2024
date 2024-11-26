@@ -10,32 +10,37 @@
         <title>Eksamen</title>
     </head>
     <body>
+        <div class="grid-container">
         <header>
-            <a href="index.html" class="main-logo"><img id="main-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo"></a>
-            <nav>
-                <form class="flex-search">
-                    <label for="search"></label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+            <form class="search-box" id="search-box-1">
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="index.html#produkter">Produkter</a></li>
-                    <li><a href="index.html#kategorier">Kategorier</a></li>
-                    <li><a href="index.html#kontakt">Kontakt oss</a></li>
                 </ul>
-                <ul>  
-                <li><a><i class="fa-regular fa-user"></i></a></li> 
-                <li><a><i class="fa-solid fa-heart"></i></a></li>
-                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </nav>
+            <a href="index.html" class="main-logo">LOGO</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#kategorier">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <nav class="main-nav-ikon">
+                <ul> 
+                    <li><a><i class="fa-regular fa-user"></i></a></li> 
+                    <li><a><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul> 
-
             </nav>
         </header>
         <main>
-            <section>
+            <section id="shoppingbag">
                 <article>
-                    <h1>1. Shoppingbagen din</h1>
+                    <h2>1. Shoppingbagen din</h2>
                 </article>
                 <article>
                     <img src="img/goldenretriever.jpg" alt="Product">
@@ -109,22 +114,29 @@
                         </select>
                     </label>
                     <label>
-                        <input type="number" name="antall" min="1" max="10" required>
+                        <select name="antall" id="antall" required>
+                            <option value="">antall</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                     </label>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-trash"></i>
                 </article>
             </section>
-            <section>
+            <section id="opplysninger">
                 <article>
-                    <h1>2. Dine opplysninger</h1>
+                    <h2>2. Dine opplysninger</h2>
                     <h3>Leveringsadresse</h3>
                     <label for="navn">Fornavn</label>
                     <input type="text" name="fornavn" placeholder="Margrete" id="fornavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     <label for="navn">Etternavn</label>
                     <input type="text" name="etternavn" placeholder="Eriksen" id="etternavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     <label for="gateadresse">Gateadresse</label>
-                    <input type="text" name="gateadresse" placeholder="BRA veien 4" id="gateadresse" maxlenght="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    <input type="text" name="gateadresse" placeholder="BRA veien 4" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     <label for="postnummer">Postnummer</label>
                     <input type="number" name="postnummer" placeholder="1783" id="postnummer" maxlenght="4" required>
                     <label for="poststed">Poststed</label>
@@ -140,9 +152,9 @@
                     <a href="#">Avbryt</a>
                 </article>
             </section>
-            <section>
+            <section id="levering">
                 <article>
-                    <h1>3. Levering</h1>
+                    <h2>3. Levering</h2>
                     <h3>Valg</h3>
                     <label>
                         <input type="radio" name="valg" required>
@@ -164,8 +176,8 @@
                     </label>
                 </article>
             </section>
-            <section>
-                <h1>4. Betaling</h1>
+            <section id="betaling">
+                <h2>4. Betaling</h2>
                 <h3>Betal med kort</h3>
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
@@ -191,11 +203,11 @@
             </section>
         </main>
         <footer>
-            <section id="kontakt">
+            <section>
                 <img id="footer-logo" src="https://picsum.photos/id/237/150/150" alt="Nettsted logo">
                 <h4>Lorem ipsum</h4>
             </section>
-            <section>
+            <section id="kontakt">
                 <h3>Kontakt</h3>
                     <i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden 
                     <i class="fa-solid fa-phone"></i> Telefon: 69 60 80 00 
@@ -204,22 +216,27 @@
             </section>
             <section>
                 <h3>Snarveier</h3>
+            <nav class="main-nav">
              <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
              </ul>
+            </nav>
             </section>
             <section>
                 <h3>Sosiale medier</h3>
+            <nav class="main-nav-ikon">
                 <ul>
                     <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
                     <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
                     <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
                 </ul>
+            </nav>
             </section>
         </footer>
+      </div>
     </body>
 </html>
