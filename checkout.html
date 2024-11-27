@@ -47,7 +47,7 @@
                     <h2>1. Shoppingbagen din</h2>
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Product">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
@@ -75,12 +75,12 @@
                     <i class="fa-solid fa-trash"></i>
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Product">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
                     <label>
-                        <select name="størrelse" id="størrelse" required>
+                        <select name="størrelse" required>
                             <option value="">Velg størrelse</option>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
@@ -90,7 +90,7 @@
                         </select>
                     </label>
                     <label>
-                        <select name="antall" id="antall" required>
+                        <select name="antall" required>
                             <option value="">antall</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -103,12 +103,12 @@
                     <i class="fa-solid fa-trash"></i>
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Product">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
                     <label>
-                        <select name="størrelse" id="størrelse" required>
+                        <select name="størrelse" required>
                             <option value="">Velg størrelse</option>
                             <option value="XS">XS</option>
                             <option value="S">S</option>
@@ -118,7 +118,7 @@
                         </select>
                     </label>
                     <label>
-                        <select name="antall" id="antall" required>
+                        <select name="antall" required>
                             <option value="">antall</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -142,7 +142,7 @@
                     <label for="gateadresse">Gateadresse</label>
                     <input type="text" name="gateadresse" placeholder="BRA veien 4" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                     <label for="postnummer">Postnummer</label>
-                    <input type="number" name="postnummer" placeholder="1783" id="postnummer" maxlenght="4" required>
+                    <input type="number" name="postnummer" placeholder="1783" id="postnummer" required>
                     <label for="poststed">Poststed</label>
                     <input type="text" name="poststed" placeholder="Halden" id="poststed" maxlength="20" required>
 
@@ -152,7 +152,7 @@
                     <label>Telefon</label>
                     <input type="tel" name="Telefon" pattern="[0-9]{8,12}" maxlength="12" required>
 
-                    <p><button>Lagre</button></p>
+                    <p><button class="lagre">Lagre</button></p>
                     <a href="#">Avbryt</a>
                 </article>
             </section>
@@ -183,6 +183,7 @@
             <section id="betaling">
                 <h2>4. Betaling</h2>
                 <h3>Betal med kort</h3>
+            <article class="betaling-opplysninger">
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
                 <label>Kortnummer</label>
@@ -191,9 +192,10 @@
                 <input type="text" name="dato" id="dato" placeholder="mm/yy" maxlength="5" required>
                 <label>CVC/CVV</label>
                 <input type="text" name="cvc/cvv" id="cvc" placeholder="111" maxlength="3" required>
+            </article>
                 <p>Å betale inkl. MVA</p>
                 <h3>12 000 kr</h3>
-                <p><button>Fullfør kjøp</button></p>
+                <p><button class="done">Fullfør kjøp</button></p>
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtale forholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
 
                 <label>
@@ -209,7 +211,7 @@
         <footer>
             <section class="footer-section">
                 <a href="index.html" class="footer-logo">LOGO</a>
-                <p>Lorem ipsum</p>
+                <p>Her finner du mer informasjon om oss. Er det noe du lurer på så er det bare å kontakte oss.</p>
             </section>
             <section id="kontakt" class="footer-section">
                 <article class="footer-section">
@@ -227,12 +229,11 @@
             <section class="footer-section">
                 <h3>Snarveier</h3>
             <nav class="footer-nav">
-             <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li>
-                <li><a href="#categories">Kategorier</a></li>
-                <li><a href="#kontakt">Kontakt oss</a></li>
-             </ul>
+                <ul>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html#categories">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                 </ul>
             </nav>
             </section>
             <section class="footer-section">
