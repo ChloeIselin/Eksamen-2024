@@ -165,6 +165,7 @@ figure{
     border-color: black;
     background-color: white;
     color: black;
+    margin-bottom: 30px;
 }
 
 .product-card{
@@ -180,6 +181,12 @@ figure{
         min-width: 300px;
     }
 }
+
+.lignende-produkter {
+    margin-bottom: 30px;
+}
+
+
 
 .product-card i{
     display:inline-flex;
@@ -204,8 +211,20 @@ figure{
     text-align: center;
 }
 
-#produkter article{
+#produkter h2{
+    display: flex;
     text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    gap: 0;
+}
+
+#produkter p{
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .price{
@@ -224,8 +243,18 @@ figure{
     padding: 0;
 }
 
-.kategorier article{
-    text-align: left;
+.kategorier h2{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    gap: 0;
+}
+
+.kategorier p{
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .kategori1{
@@ -280,6 +309,22 @@ details{
     display: block;
 }
 
+details summary{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+}
+
+details summary::before{
+    content: "\002b";
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+
 .anmeldelsene{
     max-width: 350px;
     min-width: 200px;
@@ -289,6 +334,7 @@ details{
     justify-content:space-between;
     gap: 30px;
     padding: 0;
+    margin-top: 25px;
 }
 
 .anmeldelser{
@@ -390,7 +436,7 @@ details{
     display: list-item;
     list-style: none;
     color: black;
-    padding: 12px 20px;
+    padding: 12px 0px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -399,20 +445,19 @@ details{
 }
 
 .lagre{
-    width: 100%;
     border: solid 3px;
     border-color: grey;
     background-color:grey;
     color: white;
-    font-weight: bold;
     justify-content: center;
+    padding: 10px 10px 10px 10px;
 }
 
 #opplysninger input{
     width: 100%;
     display: list-item;
     color: black;
-    padding: 12px 20px;
+    padding: 12px 5px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -435,7 +480,7 @@ details{
     display: list-item;
     list-style: none;
     color: black;
-    padding: 12px 20px;
+    padding: 12px 0px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -468,7 +513,7 @@ details{
     display: flex;
     list-style: none;
     color: black;
-    padding: 12px 20px;
+    padding: 12px 0px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -479,8 +524,8 @@ details{
 .betaling-opplysninger input{
     width: 100%;
     display: list-item;
-    color: white;
-    padding: 12px 20px;
+    color: black;
+    padding: 12px 5px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -492,41 +537,26 @@ details{
 }
 
 .done{
-    width: 100%;
     border: solid 3px;
     border-color: grey;
     background-color:grey;
     color: white;
-    font-weight: bold;
     justify-content: center;
+    padding: 10px 10px 10px 10px;
 }
 
 #legg-handlekurv{
+    border: solid 3px;
+    border-color: grey;
+    background-color:grey;
     color: white;
-    background-color: grey;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow:13px 9px 20px 0px #efefef;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    width: 100%;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
 }
 
 .button-handlekurv{
     display: flex;
     justify-content: space-evenly;
-}
-
-.btn-heart{
-    padding: 5px;
-    border-radius: 8px;
-    color: white;
-    background-color: grey;
-    height: auto;
-}
-
-details{
-    display: block;
 }
 
 /*Footer*/

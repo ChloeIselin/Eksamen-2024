@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+        <link rel="stylesheet" href="ikoner/ikoner/css/regular.css">
         <link rel="stylesheet" href="ikoner/ikoner/css/fontawesome.css">
         <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Eksamen</title>
+        <title>Kasse siden Eksamen</title>
     </head>
     <body>
         <div class="grid-container">
@@ -18,15 +19,15 @@
                 </form>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="index.html#produkter">Produkter</a></li>
+                        <li><a href="index.html" aria-label="Gå tilbake til forsiden.">Hjem</a></li>
+                        <li><a href="index.html#produkter" aria-label="Gå til produkter på forsiden.">Produkter</a></li>
                     </ul>
                 </nav>
-                <a href="index.html" class="main-logo">LOGO</a>
+                <a href="index.html" class="main-logo" aria-label="Gå tilbake til forsiden.">LOGO</a>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html#categories">Kategorier</a></li>
-                        <li><a href="#kontakt">Kontakt oss</a></li>
+                        <li><a href="index.html#categories" aria-label="Gå til kategorier i forsiden.">Kategorier</a></li>
+                        <li><a href="#kontakt" aria-label="Gå til kontaktinformasjon.">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav class="main-nav-ikon">
@@ -37,20 +38,19 @@
                         <li><a><i class="fa-regular fa-heart"></i></a></li>
                     </ul> 
                     <ul>
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="checkout.html" aria-label="Gå til kassen."><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul> 
                 </nav>
             </header>
         <main>
             <section id="shoppingbag">
-                <article>
                     <h2>1. Shoppingbagen din</h2>
-                </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
+                <form>
                     <label>
                         <select name="størrelse" id="størrelse" required>
                             <option value="">Velg størrelse</option>
@@ -73,149 +73,165 @@
                     </label>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-trash"></i>
+                </form>
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
-                    <label>
-                        <select name="størrelse" required>
-                            <option value="">Velg størrelse</option>
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </label>
-                    <label>
-                        <select name="antall" required>
-                            <option value="">antall</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </label>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-trash"></i>
+                    <form>
+                        <label>
+                            <select name="størrelse" required>
+                                <option value="">Velg størrelse</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </label>
+                        <label>
+                            <select name="antall" required>
+                                <option value="">antall</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </form>
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h2>Golden Retriever</h2>
                     <p class="price">kr 12 000 inkl. mva</p>
-                    <label>
-                        <select name="størrelse" required>
-                            <option value="">Velg størrelse</option>
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </label>
-                    <label>
-                        <select name="antall" required>
-                            <option value="">antall</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </label>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-trash"></i>
+                    <form>
+                        <label>
+                            <select name="størrelse" required>
+                                <option value="">Velg størrelse</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </label>
+                        <label>
+                            <select name="antall" required>
+                                <option value="">antall</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </form>
                 </article>
             </section>
             <section id="opplysninger">
+                <h2>2. Dine opplysninger</h2>
                 <article>
-                    <h2>2. Dine opplysninger</h2>
                     <h3>Leveringsadresse</h3>
-                    <label for="navn">Fornavn</label>
-                    <input type="text" name="fornavn" placeholder="Margrete" id="fornavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                    <label for="navn">Etternavn</label>
-                    <input type="text" name="etternavn" placeholder="Eriksen" id="etternavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                    <label for="gateadresse">Gateadresse</label>
-                    <input type="text" name="gateadresse" placeholder="BRA veien 4" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                    <label for="postnummer">Postnummer</label>
-                    <input type="number" name="postnummer" placeholder="1783" id="postnummer" required>
-                    <label for="poststed">Poststed</label>
-                    <input type="text" name="poststed" placeholder="Halden" id="poststed" maxlength="20" required>
+                    <form>
+                        <label for="fornavn">Fornavn</label>
+                        <input type="text" name="fornavn" placeholder="Margrete" id="fornavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+            
+                        <label for="etternavn">Etternavn</label>
+                        <input type="text" name="etternavn" placeholder="Eriksen" id="etternavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                
+                        <label for="gateadresse">Gateadresse</label>
+                        <input type="text" name="gateadresse" placeholder="BRA veien 4" id="gateadresse" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                    
+                        <label for="postnummer">Postnummer</label>
+                        <input type="number" name="postnummer" placeholder="1783" id="postnummer" required>
+                
+                        <label for="poststed">Poststed</label>
+                        <input type="text" name="poststed" placeholder="Halden" id="poststed" maxlength="20" required>
 
-                    <h3>Kontaktinformasjon</h3>
-                    <label>E-post</label>
-                    <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
-                    <label>Telefon</label>
-                    <input type="tel" name="Telefon" pattern="[0-9]{8,12}" maxlength="12" required>
+                        <h3>Kontaktinformasjon</h3>
 
+                        <label for="email">E-post</label>
+                        <input type="email" name="email" id="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" name="telefon" id="telefon" pattern="[0-9]{8,12}" maxlength="12" required>
+                    </form>
                     <p><button class="lagre">Lagre</button></p>
                     <a href="#">Avbryt</a>
                 </article>
             </section>
             <section id="levering">
+                <h2>3. Levering</h2>
                 <article>
-                    <h2>3. Levering</h2>
                     <h3>Valg</h3>
+                <form>
                     <label>
                         <input type="radio" name="valg" required>
                         Express hjemlevering
-                        <p class="price">59kr</p>
-                        <p>3-4 virkedager</p>
                     </label>
                     <label>
                         <input type="radio" name="valg" required>
                         Express pakke til utleveringsted
-                        <p class="price">59kr</p>
-                        <p>1-3 virkedager</p>
                     </label>
                     <label>
                         <input type="radio" name="valg" required>
                         Standard hjemlevering
-                        <p class="price">Gratis</p>
-                        <p>5-8 virkedager</p>
                     </label>
+                </form>
                 </article>
             </section>
             <section id="betaling">
                 <h2>4. Betaling</h2>
-                <h3>Betal med kort</h3>
             <article class="betaling-opplysninger">
+                <h3>Betal med kort</h3>
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
+            <form>
                 <label>Kortnummer</label>
                 <input type="text" name="kortnummer" placeholder="1111-2222-3333-4444" maxlength="16" required>
+            
                 <label>Dato</label>
                 <input type="text" name="dato" id="dato" placeholder="mm/yy" maxlength="5" required>
+            
                 <label>CVC/CVV</label>
                 <input type="text" name="cvc/cvv" id="cvc" placeholder="111" maxlength="3" required>
+            </form>
             </article>
                 <p>Å betale inkl. MVA</p>
                 <h3>12 000 kr</h3>
                 <p><button class="done">Fullfør kjøp</button></p>
                 <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtale forholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
-
+                
+            <form>
                 <label>
                 <input type="radio" name="valg" required>
                 Ja takk! Send nyhetsbrev til meg.
                 </label>
+            </form>
+            <form> 
                 <label>
                     <input type="radio" name="valg" required>
                     Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
-                    </label>
+                </label>
+            </form>   
             </section>
         </main>
         <footer>
             <section class="footer-section">
-                <a href="index.html" class="footer-logo">LOGO</a>
+                <h1><a href="index.html" class="footer-logo">LOGO</a></h1>
                 <p>Her finner du mer informasjon om oss. Er det noe du lurer på så er det bare å kontakte oss.</p>
             </section>
             <section id="kontakt" class="footer-section">
+                <h3>Kontakt</h3>
                 <article class="footer-section">
-                    <h3>Kontakt</h3>
                     <nav class="footer-nav">
                         <ul>
                             <li><i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden</li>
@@ -229,21 +245,21 @@
             <section class="footer-section">
                 <h3>Snarveier</h3>
             <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html#produkter">Produkter</a></li>
-                    <li><a href="index.html#categories">Kategorier</a></li>
-                    <li><a href="#kontakt">Kontakt oss</a></li>
-                 </ul>
+             <ul>
+                <li><a href="index.html#produkter" aria-label="Gå til produkter på forsiden.">Produkter</a></li>
+                <li><a href="index.html#categories" aria-label="Gå til kategorier på forsiden.">Kategorier</a></li>
+                <li><a href="#kontakt" aria-label="Gå til kontakter.">Kontakt oss</a></li>
+             </ul>
             </nav>
             </section>
             <section class="footer-section">
                 <h3>Sosiale medier</h3>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
-                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Gå til instagram."><i class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href="https://www.facebook.com/" aria-label="Gå til facebook."><i class="fa-brands fa-facebook"></i></a></li>  
+                    <li><a href="https://www.linkedin.com/" aria-label="Gå til linkedin."><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/" aria-label="Gå til pinterest."><i class="fa-brands fa-square-pinterest"></i></a></li>
                 </ul>
             </nav>
             </section>

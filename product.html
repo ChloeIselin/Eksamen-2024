@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/ikoner/css/solid.css">
+        <link rel="stylesheet" href="ikoner/ikoner/css/regular.css">
         <link rel="stylesheet" href="ikoner/ikoner/css/fontawesome.css">
         <link rel="stylesheet" href="ikoner/ikoner/css/brands.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Eksamen</title>
+        <title> Produktside Eksamen</title>
     </head>
     <body>
         <div class="grid-container">
@@ -18,15 +19,15 @@
                 </form>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="index.html#produkter">Produkter</a></li>
+                        <li><a href="index.html" aria-label="Gå tilbake til forsiden.">Hjem</a></li>
+                        <li><a href="index.html#produkter" aria-label="Gå til produkter på forsiden.">Produkter</a></li>
                     </ul>
                 </nav>
-                <a href="index.html" class="main-logo">LOGO</a>
+                <a href="index.html" class="main-logo" aria-label="Gå tilbake til forsiden.">LOGO</a>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html#categories">Kategorier</a></li>
-                        <li><a href="#kontakt">Kontakt oss</a></li>
+                        <li><a href="index.html#categories" aria-label="Gå til kategorier i forsiden.">Kategorier</a></li>
+                        <li><a href="#kontakt" aria-label="Gå til kontaktinformasjon.">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav class="main-nav-ikon">
@@ -37,33 +38,41 @@
                         <li><a><i class="fa-regular fa-heart"></i></a></li>
                     </ul> 
                     <ul>
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="checkout.html" aria-label="Gå til kassen."><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul> 
                 </nav>
             </header>
         <main>
             <nav class="breadcrumbs">
                 <ul>
-                    <li><a href="index.html"> Hjem  ></a></li>
-                    <li><a href="index.html#categories"> Kategori  ></a></li>
-                    <li><a href="product.html" id="bold"> Golden Retriever  ></a></li>
+                    <li><a href="index.html" aria-label="Gå tilbake til forsiden."> Hjem  ></a></li>
+                    <li><a href="index.html#categories" aria-label="Gå tilbake til kategorier."> Kategori  ></a></li>
+                    <li><a href="product.html" id="bold" aria-label="Gå til produktet."> Golden Retriever  ></a></li>
                 </ul>
             </nav>
             <section id="produkt">
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <h2>
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
+                    </h2>
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <h2>
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
+                    </h2>
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <h2>
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
+                    </h2>
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                 </article>
                 <article>
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <h2>
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
+                    </h2>
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                 </article>
                 <article>
@@ -71,9 +80,8 @@
                     <a href="index.html#produkter" class="golden">Golden Retriever</a>
                     <p class="price">kr 12 000 ink. mva</p>
                     <p>Pels farge: Lys</p>
-                </article>
+                <form>
                 <label>
-                    Velg størrelse
                     <select name="størrelse" id="størrelse" required>
                         <option value="">Velg størrelse</option>
                         <option value="XS">XS</option>
@@ -83,9 +91,8 @@
                         <option value="XL">XL</option>
                     </select>
                 </label>
-                <article class="button-handlekurv">
-                    <p><button id="legg-handlekurv">Legg til i handlekurv</button></p>
-                    <button class="btn-heart"><i class="fa-solid fa-heart"></i></button>
+                </form>
+                    <p><button class="button-handlekurv" id="legg-handlekurv">Legg til i handlekurv</button></p>
                 </article>
                 <details>
                     <summary>Materiale og vedlikehold</summary>
@@ -95,74 +102,13 @@
                     <summary>Produktdetaljer</summary>
                     <p>Denne søte valpen ser etter en kjærlig familie som kan gi han kos og klem, samt mange lange turer uansett vær!</p>
                 </details>
-                <details>
-                    <summary>Størrelsetabell</summary>
-                        <table>
-                            <tr>
-                                <th>Størrelse</th>
-                                <th>Rygg</th>
-                                <th>Hals</th>
-                                <th>Bringe</th>
-                                <th>Hunderase</th>
-                            </tr>
-                            <tr>
-                                <th>XS</th>
-                                <th>25-30</th>
-                                <th>32-36</th>
-                                <th>30-55</th>
-                                <th>Chihuahua, Papillon</th>
-                            </tr>
-                            <tr>
-                                <th>S</th>
-                                <th>30-35</th>
-                                <th>36-42</th>
-                                <th>45-57</th>
-                                <th>French Bulldog, Bichon Frisé</th>
-                            </tr>
-                            <tr>
-                                <th>M</th>
-                                <th>35-40</th>
-                                <th>42-50</th>
-                                <th>55-70</th>
-                                <th>Cocker Spaniel, Beagle</th>
-                            </tr>
-                            <tr>
-                                <th>L</th>
-                                <th>50-55</th>
-                                <th>55-60</th>
-                                <th>70-90</th>
-                                <th>Australian Shepherd, Border Collie</th>
-                            </tr>
-                            <tr>
-                                <th>XL</th>
-                                <th>60-65</th>
-                                <th>68-74</th>
-                                <th>70-93</th>
-                                <th>Golden Retriever, Labrador, Husky, Dalmatiner</th>
-                            </tr>
-                        </table>
-                </details>
-               <details>
-                <summary>Anmeldelser</summary>
-                    <article class="anmeldelser">
-                        <img src="https://picsum.photos/id/901/150/150" alt="Profil bilde" class="img-radius">
-                        <h3>Hanna Hagen</h3>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <p>Jeg er veldig fornøyd med hunden min. Takket være dere så har jeg funnet min bestevenn, og livet mitt er fylt med kjærlighet og glede. Hverdagen min har blitt mye bedre, mange flere turer i skogen med hunden min. Det beste valget jeg tok var å adoptere hunden min. Anbefaler sterkt!</p>
-                    </article>
-               </details>
             </section>
             <section>
-                <article>
                     <h2>Lignende produkter</h2>
-                    <a href="#">Se flere lignende produkter</a>
-                </article>
+                    <a class="lignende-produkter" href="#">Se flere lignende produkter</a>
+
                 <article class="product-card">
-                    <img src="img/goldenretriever.jpg" alt="Produkt bilde">
+                    <img src="img/goldenretriever.jpg" alt="Produkt bilde" aria-label="Bilde av produktet">
                     <!--Image by <a href="https://pixabay.com/users/currens-302891/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Harry</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6945696">Pixabay</a>-->
                     <h4>Golden Retriever</h4>
                     <a href="product.html#produkt">Golden Retriever</a>
@@ -174,7 +120,7 @@
                         <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
-                    <img src="img/cockerspaniel.jpg" alt="Produkt bilde"> 
+                    <img src="img/cockerspaniel.jpg" alt="Produkt bilde" aria-label="Bilde av produktet"> 
                     <!--Image by <a href="https://pixabay.com/users/katrina_s-5565009/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Katrina_S</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2415289">Pixabay</a>-->
                     <h4>Cocker Spaniel</h4>
                     <a href="product.html#produkt">Cocker Spaniel</a>
@@ -186,7 +132,7 @@
                     <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
-                    <img src="img/australianshepherd.jpg" alt="Produkt bilde"> <!--det var ingen kode lenke til dette bilde--> 
+                    <img src="img/australianshepherd.jpg" alt="Produkt bilde" aria-label="Bilde av produktet"> <!--det var ingen kode lenke til dette bilde--> 
                     <h4>Australian Shepherd</h4>
                     <a href="product.html#produkt">Australian Shepherd</a>
                     <p class="price">kr 22 000</p>
@@ -197,7 +143,7 @@
                         <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
-                    <img src="img/husky.jpg" alt="Produkt bilde"> <!--det var ingen kode lenke til dette bilde--> 
+                    <img src="img/husky.jpg" alt="Produkt bilde" aria-label="Bilde av produktet"> <!--det var ingen kode lenke til dette bilde--> 
                     <h4>Husky</h4>
                     <a href="product.html#produkt">Husky</a>
                     <p class="price">kr 17 000</p>
@@ -208,7 +154,7 @@
                         <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
-                    <img src="img/shiba.jpg" alt="Produkt bilde"> <!--Image by <a href="https://pixabay.com/users/matyasvargaphoto-22257522/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Mátyás Varga</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Pixabay</a>-->
+                    <img src="img/shiba.jpg" alt="Produkt bilde" aria-label="Bilde av produktet"> <!--Image by <a href="https://pixabay.com/users/matyasvargaphoto-22257522/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Mátyás Varga</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6845972">Pixabay</a>-->
                     <h4>Shiba</h4>
                     <a href="product.html#produkt">Shiba</a>
                     <p class="price">kr 25 000</p>
@@ -219,7 +165,7 @@
                         <i class="fa-solid fa-star"></i>
                 </article>
                 <article class="product-card">
-                    <img src="img/bordercollie.jpg" alt="Produkt bilde"> <!--Image by <a href="https://pixabay.com/users/salofoto-11386676/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">salofoto</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">Pixabay</a>-->
+                    <img src="img/bordercollie.jpg" alt="Produkt bilde" aria-label="Bilde av produktet"> <!--Image by <a href="https://pixabay.com/users/salofoto-11386676/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">salofoto</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6773336">Pixabay</a>-->
                     <h4>Border Collie</h4>
                     <a href="product.html#produkt">Border Collie</a>
                     <p class="price">kr 16 500</p>
@@ -233,12 +179,12 @@
         </main>
         <footer>
             <section class="footer-section">
-                <a href="index.html" class="footer-logo">LOGO</a>
+                <h1><a href="index.html" class="footer-logo">LOGO</a></h1>
                 <p>Her finner du mer informasjon om oss. Er det noe du lurer på så er det bare å kontakte oss.</p>
             </section>
             <section id="kontakt" class="footer-section">
+                <h3>Kontakt</h3>
                 <article class="footer-section">
-                    <h3>Kontakt</h3>
                     <nav class="footer-nav">
                         <ul>
                             <li><i class="fa-solid fa-location-dot"></i> Sted: B R A Veien 4, 1757 Halden</li>
@@ -252,21 +198,21 @@
             <section class="footer-section">
                 <h3>Snarveier</h3>
             <nav class="footer-nav">
-                <ul>
-                    <li><a href="index.html#produkter">Produkter</a></li>
-                    <li><a href="index.html#categories">Kategorier</a></li>
-                    <li><a href="#kontakt">Kontakt oss</a></li>
-                 </ul>
+             <ul>
+                <li><a href="index.html#produkter" aria-label="Gå til produkter på forsiden.">Produkter</a></li>
+                <li><a href="index.html#categories" aria-label="Gå til kategorier på forsiden.">Kategorier</a></li>
+                <li><a href="#kontakt" aria-label="Gå til kontakter.">Kontakt oss</a></li>
+             </ul>
             </nav>
             </section>
             <section class="footer-section">
                 <h3>Sosiale medier</h3>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>  
-                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Gå til instagram."><i class="fa-brands fa-instagram"></i></a></li> 
+                    <li><a href="https://www.facebook.com/" aria-label="Gå til facebook."><i class="fa-brands fa-facebook"></i></a></li>  
+                    <li><a href="https://www.linkedin.com/" aria-label="Gå til linkedin."><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/" aria-label="Gå til pinterest."><i class="fa-brands fa-square-pinterest"></i></a></li>
                 </ul>
             </nav>
             </section>
